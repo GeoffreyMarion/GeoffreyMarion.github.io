@@ -1,0 +1,275 @@
+.orange1{
+    background-color:#F9A932;
+}
+.orange2{
+    background-color:#fdbf61
+}
+.orange3{
+    background-color:#ffd99f
+}
+.orange4{
+    background-color:#ffeacb
+}
+.side{
+    width: 15%;
+    position: fixed;
+    left: 5%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.fiche{
+    font-size:smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.competences{
+    padding: 20px;
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+}
+.logos a img{
+    width: 4.5vw;
+}
+.avatardiv{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.avatardiv:hover{
+    border: solid 2px black;
+    cursor: pointer;
+}
+.avatar{
+    width: 100%;
+}
+.sidecontenu{
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.accordion-body,.accordion-button,.accordion-header,.accordion-item{
+    border: none;
+}
+.accordion-button{
+    height: 10px;
+    border-bottom: solid 1px black;
+}
+.accordion-button:focus{
+    background-color:#ffeacb;
+}
+.accordion-button:not(.collapsed) {
+    background-color:#fdbf61;
+    color: black;
+}
+.accordion-button.collapsed{
+    background-color:#ffeacb;
+    color: black;
+}
+nav{
+    z-index:2;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 21%;
+    width: 75%;
+}
+.menu{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+.menu:hover{
+    background-color: #ffd99f;
+    border: solid 1px #F9A932;
+}
+.menu a:hover{
+    text-decoration: none;
+    color: black;
+}
+.middle{
+    width: 75%;
+    margin-left: 21%;
+    position: absolute;
+    top: 110px;
+}
+.btn-primary{
+    font-size: 1.5rem;
+    color: black;
+    background-color: #ffd99f;
+    border-color: #ffeacb;
+}
+.btn-primary:focus{
+    background-color: #ffd99f;
+    border-color: #ffeacb;
+}
+.btn-primary:hover{
+    background-color: #ffd99f;
+    border-color: #ffeacb;
+}
+.center{
+    text-align: center;
+}
+.contents,.content,.souscontent{
+    padding: 20px;
+}
+.contents{
+    margin-bottom: 10px;
+}
+.contents h3{
+    margin: 15px;
+}
+.middle h4{
+    margin-left: 30px;
+}.middle h6{
+    margin-left: 50px;
+    font-style: italic;
+    font-size: x-small;
+}
+
+@media screen and (max-width: 1400px){
+    .fiche p{
+        font-size: small;
+        /*background-color: green;*/
+    }
+    .side{
+        width: 20%;
+        position: fixed;
+        left: 0px;
+    }
+    .competences h3{
+        font-size:large;
+    }
+    .competences h4 button{
+        font-size:small;
+    }
+    .competences h5{
+        font-size:small;
+    }
+    .menu a{
+        font-size: x-large;
+    }
+
+@media screen and (max-width: 1100px){
+    .fiche p{
+        font-size: smaller;
+        /*background-color: blue;*/
+    }
+    .middle{
+        position: absolute;
+        top: 70px;
+    }
+    .middle p{
+        font-size: x-small;
+    }
+    .middle h3{
+        font-size: large;
+    }
+    .middle h4{
+        font-size: medium;
+    }
+    .competences h3{
+        font-size:large;
+    }
+    .competences h4 button{
+        font-size:x-small;
+    }
+    .competences h5{
+        font-size:small;
+    }
+    .menu a{
+        font-size: large;
+    }
+    .menu{
+        height: 60px;
+        line-height: 60px;
+    }
+    .contents,.content,.souscontent,.fiche,.competences{
+        padding: 10px;
+    }
+    p{
+        margin-bottom: 5px;
+    }
+    hr{
+        margin: 4px;
+    }
+    .btn-primary{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .logos a img{
+        width: 8vw;
+    }
+    .side{
+        width: 35%;
+        position: fixed;
+        left: 0px;
+    }
+    .middle{
+        width: 64%;
+        margin-left: 36%;
+        position: absolute;
+        top: 45px;
+    }
+    nav{
+        position: fixed;
+        left: 36%;
+        width: 64%;
+    }
+
+    .fiche p{
+        font-size: x-small;
+        /*background-color: violet;*/
+    }
+    .competences h5{
+        font-size:smaller;
+    }
+    p{
+        margin-bottom: 5px;
+    }
+    hr{
+        margin: 2px;
+    }
+    .fiche{
+        margin-bottom: 5px;
+    }
+    .contents{
+        margin-bottom: 5px;
+    }
+    .avatardiv{
+        margin-bottom: 5px;
+    }
+    .menu{
+        height: 40px;
+        line-height: 40px;
+    }
+    .btn-primary{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .fiche p{
+        font-size: xx-small;
+        /*background-color: red;*/
+    }
+    .competences h4 button{
+        font-size:xx-small;
+    }
+    .competences h5{
+        font-size:x-small;
+    }
+    .btn-primary{
+        font-size: 0.5rem;
+    }
+}
