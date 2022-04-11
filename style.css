@@ -39,12 +39,14 @@
     margin: auto;
     margin-bottom: 10px;
 }
-.avatardiv:hover{
+.avatar:hover{
     border: solid 2px black;
     cursor: pointer;
 }
 .avatar{
     width: 100%;
+    border-radius: 50%;
+    border: solid 2px white;
 }
 .sidecontenu{
     margin: auto;
@@ -81,10 +83,19 @@ nav{
     height: 100px;
     line-height: 100px;
     text-align: center;
+    border-bottom: solid 1px black;
+    border-left: solid 1px #ffeacb;
+    border-right: solid 1px #ffeacb;
+}
+.menu .firt{
+    border-left: none;
+}
+.menu .last{
+    border-right: none;
 }
 .menu a{
     text-decoration: none;
-    color: white;
+    color: #ffeacb;
     font-size: xx-large;
 }
 .menu:hover{
